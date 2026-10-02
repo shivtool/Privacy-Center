@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · SHIV Voice Calculator</title>
+<meta name="description" content="SHIV Voice Calculator ki privacy policy / Privacy policy of SHIV Voice Calculator">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg1:#1a0b4d;--bg2:#6a11cb;--bg3:#ff0080;--bg4:#ff8c00;
+  --text:#fff;--soft:rgba(255,255,255,.82);--card:rgba(255,255,255,.12);--card2:rgba(0,0,0,.26);--line:rgba(255,255,255,.22);
+  --ok:#3df5a0;--cyan:#4df3ff;--yellow:#ffe066;
+  --font:"Hind","Poppins",system-ui,"Noto Sans Devanagari",sans-serif;
+  --head:"Poppins","Hind",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){--bg1:#4facfe;--bg2:#a18cd1;--bg3:#fbc2eb;--bg4:#ffd86f;--text:#1b1340;--soft:rgba(27,19,64,.82);--card:rgba(255,255,255,.62);--card2:rgba(255,255,255,.75);--line:rgba(27,19,64,.14);--ok:#0b9b5c}
+}
+:root[data-theme="light"]{--bg1:#4facfe;--bg2:#a18cd1;--bg3:#fbc2eb;--bg4:#ffd86f;--text:#1b1340;--soft:rgba(27,19,64,.82);--card:rgba(255,255,255,.62);--card2:rgba(255,255,255,.75);--line:rgba(27,19,64,.14);--ok:#0b9b5c}
+
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--text);line-height:1.75;font-size:16.5px;min-height:100vh;
+  background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3),var(--bg4)) fixed;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;border-radius:50%;pointer-events:none;z-index:0;opacity:.5}
+body::before{width:340px;height:340px;top:6%;left:-120px;background:radial-gradient(circle,#00e5ff,transparent 70%)}
+body::after{width:380px;height:380px;bottom:4%;right:-140px;background:radial-gradient(circle,#ffea00,transparent 70%)}
+.wrap{position:relative;z-index:1;max-width:820px;margin:0 auto;padding:22px 16px 56px}
+
+/* top bar */
+.bar{display:flex;align-items:center;gap:10px;margin-bottom:26px}
+.brand{font-family:var(--head);font-weight:800;letter-spacing:3px;font-size:12px;padding:3px 11px;border-radius:9px;color:#fff;background:linear-gradient(135deg,#ff0080,#ff8c00,#ffea00)}
+.bar span.t{flex:1;font-weight:600;opacity:.9}
+.seg{display:flex;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);backdrop-filter:blur(8px)}
+.seg button{border:0;background:none;color:var(--text);font:600 14px var(--font);padding:9px 14px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:linear-gradient(135deg,#ff0080,#ff8c00);color:#fff}
+button:focus-visible,a:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;padding:26px;border-radius:30px;border:1px solid var(--line);background:var(--card2);backdrop-filter:blur(12px);margin-bottom:18px}
+.shield{width:92px;height:92px;flex:none;animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-6px)}}
+h1{font-family:var(--head);font-weight:800;font-size:clamp(26px,6.2vw,40px);line-height:1.2;letter-spacing:-.3px}
+.hero p{color:var(--soft);margin-top:6px}
+.meta{margin-top:10px;font-size:14px;opacity:.85}
+
+/* promise chips */
+.chips{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:22px}
+.chip{display:flex;gap:10px;align-items:center;padding:12px 14px;border-radius:18px;border:1px solid var(--line);background:var(--card);font-weight:600;font-size:15px;line-height:1.35}
+.chip i{flex:none;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--ok);color:#06361f;font-style:normal;font-weight:800;font-size:15px}
+
+/* sections */
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+nav.toc a{color:var(--text);text-decoration:none;font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card)}
+nav.toc a:hover{background:var(--card2)}
+section{padding:22px 22px 18px;border-radius:24px;border:1px solid var(--line);background:var(--card);backdrop-filter:blur(10px);margin-bottom:14px;scroll-margin-top:16px}
+h2{font-family:var(--head);font-size:21px;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:10px}
+h2 .e{font-size:22px}
+p+p,p+ul,ul+p,p+.tbl{margin-top:10px}
+ul{padding-left:1.2em}
+li{margin:5px 0;color:var(--soft)}
+li::marker{color:var(--yellow)}
+p{color:var(--soft)}
+b,strong{color:var(--text)}
+.tbl{overflow-x:auto;border-radius:16px;border:1px solid var(--line);background:var(--card2)}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:460px}
+th,td{padding:11px 13px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--head);font-size:13.5px;font-weight:600;opacity:.9}
+td:first-child{font-weight:700;white-space:nowrap}
+.tag{display:inline-block;padding:1px 9px;border-radius:8px;font-size:13px;font-weight:700;background:var(--ok);color:#06361f}
+.tag.no{background:#ff5470;color:#fff}
+.note{margin-top:12px;padding:12px 14px;border-radius:16px;border-left:4px solid var(--yellow);background:var(--card2);font-size:15px}
+a.mail{color:var(--text);font-weight:700;text-decoration-color:var(--yellow);text-underline-offset:3px}
+.contact{text-align:center;padding:26px 20px}
+.contact .btn{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:16px;color:#fff;font-weight:700;text-decoration:none;background:linear-gradient(135deg,#7c4dff,#ff0080);box-shadow:0 8px 24px rgba(124,77,255,.45)}
+.contact .btn:hover{filter:brightness(1.08)}
+footer{text-align:center;font-size:13.5px;opacity:.8;margin-top:22px}
+
+/* language visibility */
+html[lang="hi"] [data-l="en"],html[lang="en"] [data-l="hi"]{display:none!important}
+
+@media (max-width:560px){
+  body{font-size:16px}
+  .hero{grid-template-columns:1fr;text-align:center;justify-items:center;padding:22px 18px}
+  section{padding:18px 16px 14px}
+}
+@media (prefers-reduced-motion:reduce){.shield{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="bar">
+    <span class="brand">SHIV</span>
+    <span class="t">Computer</span>
+    <div class="seg" role="group" aria-label="Language">
+      <button id="bhi" aria-pressed="true">हिन्दी</button>
+      <button id="ben" aria-pressed="false">English</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <svg class="shield" viewBox="0 0 96 96" aria-hidden="true">
+      <defs>
+        <linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4df3ff"/><stop offset=".5" stop-color="#7c4dff"/><stop offset="1" stop-color="#ff0080"/></linearGradient>
+      </defs>
+      <path d="M48 6 16 18v26c0 22 13 38 32 46 19-8 32-24 32-46V18z" fill="url(#sg)"/>
+      <path d="M48 6 16 18v26c0 22 13 38 32 46z" fill="#fff" opacity=".14"/>
+      <rect x="40" y="26" width="16" height="26" rx="8" fill="#fff"/>
+      <path d="M33 45c0 10 7 16 15 16s15-6 15-16M48 61v8M41 69h14" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1 data-l="hi">आपकी निजता, आपके फ़ोन में सुरक्षित</h1>
+      <h1 data-l="en">Your privacy stays on your phone</h1>
+      <p data-l="hi"><b>SHIV Voice Calculator</b> आपका कोई व्यक्तिगत डेटा हमारे सर्वर पर नहीं भेजता। यहाँ सरल भाषा में बताया है कि ऐप क्या इस्तेमाल करता है और क्यों।</p>
+      <p data-l="en"><b>SHIV Voice Calculator</b> does not send your personal data to any server of ours. This page explains in plain words what the app uses and why.</p>
+      <div class="meta" data-l="hi">लागू होने की तिथि: <b>02 अक्टूबर 2026</b></div>
+      <div class="meta" data-l="en">Effective date: <b>2 October 2026</b></div>
+    </div>
+  </header>
+
+  <div class="chips">
+    <div class="chip"><i>✓</i><span data-l="hi">कोई अकाउंट या लॉगिन नहीं</span><span data-l="en">No account or login</span></div>
+    <div class="chip"><i>✓</i><span data-l="hi">कोई विज्ञापन नहीं</span><span data-l="en">No ads</span></div>
+    <div class="chip"><i>✓</i><span data-l="hi">कोई ट्रैकिंग / एनालिटिक्स नहीं</span><span data-l="en">No tracking or analytics</span></div>
+    <div class="chip"><i>✓</i><span data-l="hi">हिस्ट्री सिर्फ़ आपके फ़ोन में</span><span data-l="en">History stays on your device</span></div>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <a href="#collect"><span data-l="hi">हम क्या रखते हैं</span><span data-l="en">What we handle</span></a>
+    <a href="#perm"><span data-l="hi">अनुमतियाँ</span><span data-l="en">Permissions</span></a>
+    <a href="#voice"><span data-l="hi">आवाज़ की सेवाएँ</span><span data-l="en">Voice services</span></a>
+    <a href="#store"><span data-l="hi">डेटा हटाना</span><span data-l="en">Deleting data</span></a>
+    <a href="#kids"><span data-l="hi">बच्चे</span><span data-l="en">Children</span></a>
+    <a href="#contact"><span data-l="hi">संपर्क</span><span data-l="en">Contact</span></a>
+  </nav>
+
+  <section id="collect">
+    <h2><span class="e">🧮</span><span data-l="hi">हम कौन-सा डेटा रखते हैं</span><span data-l="en">What data we handle</span></h2>
+    <div data-l="hi">
+      <p>ऐप का डेवलपर (SHIV Computer) आपसे कोई जानकारी <b>इकट्ठा नहीं करता</b> — न नाम, न ईमेल, न फ़ोन नंबर, न लोकेशन, न कॉन्टैक्ट्स।</p>
+      <p>ऐप सिर्फ़ ये चीज़ें आपके <b>अपने फ़ोन में</b> सेव करता है, ताकि अगली बार खोलने पर सब वैसा ही मिले:</p>
+      <ul>
+        <li>आपके हिसाब की हिस्ट्री (जो आपने बोला या टाइप किया और उसका जवाब)</li>
+        <li>आपकी सेटिंग: भाषा (हिन्दी/English), आवाज़ में जवाब चालू/बंद, थीम और जवाब सुनाने की देरी</li>
+      </ul>
+      <p>यह डेटा ऐप के अंदर ही रहता है और हमें या किसी और को नहीं भेजा जाता।</p>
+    </div>
+    <div data-l="en">
+      <p>The developer (SHIV Computer) <b>does not collect</b> anything from you — no name, email, phone number, location or contacts.</p>
+      <p>The app only saves these things <b>on your own phone</b>, so everything is there next time you open it:</p>
+      <ul>
+        <li>Your calculation history (what you said or typed, and the answer)</li>
+        <li>Your settings: language (Hindi/English), spoken replies on/off, theme and spoken-reply delay</li>
+      </ul>
+      <p>This data stays inside the app. It is not sent to us or to anyone else.</p>
+    </div>
+  </section>
+
+  <section id="perm">
+    <h2><span class="e">🔑</span><span data-l="hi">ऐप की अनुमतियाँ</span><span data-l="en">App permissions</span></h2>
+    <div class="tbl">
+      <table>
+        <thead><tr>
+          <th><span data-l="hi">अनुमति</span><span data-l="en">Permission</span></th>
+          <th><span data-l="hi">किसलिए</span><span data-l="en">Why</span></th>
+          <th><span data-l="hi">कब</span><span data-l="en">When</span></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>🎤 Microphone</td>
+            <td><span data-l="hi">बोलकर हिसाब और वॉइस कमांड समझने के लिए।</span><span data-l="en">To understand spoken calculations and voice commands.</span></td>
+            <td><span data-l="hi">सिर्फ़ तब जब आप माइक बटन दबाकर चालू करें। ऐप बंद या बैकग्राउंड में जाते ही माइक बंद।</span><span data-l="en">Only while you switch the mic on. It stops when the app is closed or goes to the background.</span></td>
+          </tr>
+          <tr>
+            <td>📳 Vibrate</td>
+            <td><span data-l="hi">कीपैड दबाने पर हल्का कंपन।</span><span data-l="en">A light buzz when you tap keypad keys.</span></td>
+            <td><span data-l="hi">हर बटन दबाने पर।</span><span data-l="en">On each key tap.</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note" data-l="hi">ऐप इंटरनेट की अनुमति <b>नहीं माँगता</b>, और न ही आपकी फ़ोटो, फ़ाइलें, लोकेशन या कॉन्टैक्ट्स तक पहुँचता है।</div>
+    <div class="note" data-l="en">The app does <b>not request</b> internet access, and it cannot reach your photos, files, location or contacts.</div>
+  </section>
+
+  <section id="voice">
+    <h2><span class="e">🎙️</span><span data-l="hi">आवाज़ और बोलकर जवाब की सेवाएँ</span><span data-l="en">Voice and spoken-reply services</span></h2>
+    <div data-l="hi">
+      <p>बोली हुई बात पहचानने और जवाब बोलकर सुनाने का काम आपके फ़ोन की <b>सिस्टम सेवाएँ</b> करती हैं, हमारा ऐप नहीं:</p>
+      <ul>
+        <li><b>आवाज़ पहचान (Speech recognition):</b> आमतौर पर Google की स्पीच सेवा। फ़ोन और भाषा के अनुसार आपकी आवाज़ प्रोसेसिंग के लिए Google के सर्वर पर जा सकती है, इसीलिए इसके लिए इंटरनेट चाहिए।</li>
+        <li><b>बोलकर जवाब (Text-to-speech):</b> आपके फ़ोन का अपना TTS इंजन।</li>
+      </ul>
+      <p>इन सेवाओं का डेटा उनके अपने नियमों के तहत संभाला जाता है। हमारे पास आपकी रिकॉर्डिंग या बोले हुए शब्द नहीं पहुँचते। विवरण के लिए Google की <a class="mail" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> देखें।</p>
+      <p>अगर आप नहीं चाहते कि आवाज़ किसी सेवा तक जाए, तो माइक का इस्तेमाल न करें — कीपैड से कैलकुलेटर पूरी तरह फ़ोन के अंदर चलता है।</p>
+    </div>
+    <div data-l="en">
+      <p>Recognising your speech and reading answers aloud is done by your phone's <b>system services</b>, not by our app:</p>
+      <ul>
+        <li><b>Speech recognition:</b> usually Google's speech service. Depending on your phone and language, your voice may be sent to Google's servers for processing, which is why it needs internet.</li>
+        <li><b>Spoken replies (Text-to-speech):</b> your phone's own TTS engine.</li>
+      </ul>
+      <p>That data is handled under those services' own terms. Your recordings and spoken words do not reach us. See Google's <a class="mail" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> for details.</p>
+      <p>If you prefer your voice not to go to any service, don't use the mic — the keypad calculator works entirely on your phone.</p>
+    </div>
+  </section>
+
+  <section id="store">
+    <h2><span class="e">🗑️</span><span data-l="hi">डेटा कैसे हटाएँ</span><span data-l="en">How to delete your data</span></h2>
+    <div data-l="hi">
+      <ul>
+        <li><b>हिस्ट्री:</b> मेन्यू › “हिस्ट्री साफ़ करें” या बोलिए “हिस्ट्री साफ़” / “clear history”। एक एंट्री हटाने के लिए उसके आगे ✕ दबाइए।</li>
+        <li><b>सब कुछ:</b> फ़ोन की Settings › Apps › SHIV Voice Calculator › Storage › “Clear data”, या ऐप अनइंस्टॉल कर दीजिए।</li>
+      </ul>
+      <p>“कॉपी” का बटन दबाने पर सिर्फ़ जवाब आपके फ़ोन के क्लिपबोर्ड में जाता है, किसी और जगह नहीं।</p>
+    </div>
+    <div data-l="en">
+      <ul>
+        <li><b>History:</b> Menu › “Clear history”, or say “clear history” / “हिस्ट्री साफ़”. Tap ✕ next to an entry to remove just that one.</li>
+        <li><b>Everything:</b> phone Settings › Apps › SHIV Voice Calculator › Storage › “Clear data”, or uninstall the app.</li>
+      </ul>
+      <p>When you tap Copy, only the answer goes to your phone's clipboard — nowhere else.</p>
+    </div>
+  </section>
+
+  <section id="kids">
+    <h2><span class="e">🧒</span><span data-l="hi">बच्चों की निजता</span><span data-l="en">Children's privacy</span></h2>
+    <p data-l="hi">हम किसी भी उम्र के व्यक्ति से जानबूझकर कोई व्यक्तिगत जानकारी इकट्ठा नहीं करते, इसलिए बच्चों का भी कोई डेटा हमारे पास नहीं होता।</p>
+    <p data-l="en">We do not knowingly collect personal information from anyone of any age, so we hold no data about children either.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="e">📝</span><span data-l="hi">नीति में बदलाव</span><span data-l="en">Changes to this policy</span></h2>
+    <p data-l="hi">अगर ऐप में कोई नई सुविधा आती है जिससे डेटा की स्थिति बदलती है, तो हम यह पेज अपडेट करेंगे और ऊपर की तिथि बदल देंगे। ताज़ा नीति हमेशा इसी पेज पर मिलेगी।</p>
+    <p data-l="en">If a new feature changes how data is handled, we will update this page and the date above. The latest policy is always on this page.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 style="justify-content:center"><span class="e">✉️</span><span data-l="hi">कोई सवाल है?</span><span data-l="en">Have a question?</span></h2>
+    <p data-l="hi">निजता से जुड़े किसी भी सवाल के लिए हमें लिखिए।</p>
+    <p data-l="en">Write to us about anything related to privacy.</p>
+    <!-- नीचे का ईमेल अपने असली ईमेल से बदलें / Replace the email below with your real address -->
+    <a class="btn" href="mailto:yourname@example.com">yourname@example.com</a>
+    <p style="margin-top:10px;font-size:14px">SHIV Computer</p>
+  </section>
+
+  <footer>© <b>SHIV</b> Computer · SHIV Voice Calculator</footer>
+</div>
+
+<script>
+(function(){
+  var hi=document.getElementById('bhi'), en=document.getElementById('ben');
+  function set(l){
+    document.documentElement.lang=l;
+    hi.setAttribute('aria-pressed',l==='hi'); en.setAttribute('aria-pressed',l==='en');
+    document.title=(l==='hi'?'गोपनीयता नीति':'Privacy Policy')+' · SHIV Voice Calculator';
+    try{localStorage.setItem('pp_lang',l)}catch(e){}
+  }
+  hi.onclick=function(){set('hi')}; en.onclick=function(){set('en')};
+  var s='hi';
+  try{s=localStorage.getItem('pp_lang')||((navigator.language||'').indexOf('hi')===0?'hi':'en')}catch(e){}
+  set(s==='en'?'en':'hi');
+})();
+</script>
+</body>
+</html>
