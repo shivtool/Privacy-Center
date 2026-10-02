@@ -170,20 +170,13 @@
       package: "com.shivcomputer.calculatorsuite",
       file: "privacy-policy-calculation.html",
       icon: "🧮"
-    }
-        {
+    },
+    {
       name: "Voice Calculation",
       package: "com.shivcomputer.calculatorsuite",
       file: "privacy1-policy.html",
-      icon: "🧮"
+      icon: "🎙️"
     }
-    // Add more apps below, e.g.:
-    // {
-    //   name: "Khata Book",
-    //   package: "com.shivcomputer.khatabook",
-    //   file: "privacy-policy-khatabook.html",
-    //   icon: "📒"
-    // },
   ];
 
   const listEl = document.getElementById('policy-list');
@@ -221,6 +214,7 @@
     render(filtered);
   });
 
+  // Default page load par saare cards ko neeche list me dikhane ke liye call kiya gaya hai
   render(policies);
 </script>
 
